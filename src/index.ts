@@ -1,8 +1,8 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
 import { v4 as uuidv4 } from "uuid";
-import { EventItem } from "./src/types";
-import { categorizeEvent } from "./src/aiCategorize";
+import { EventItem } from "./types";
+import { categorizeEvent } from "./aiCategorize";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
